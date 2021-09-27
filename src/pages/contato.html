@@ -15,7 +15,9 @@
         <span><b>Technology Selection</b></span>
       </div>
     </a>
+
     <!-- br temporário para antes da estilização e posicionamento com CSS -->
+
     <br>
     <nav class="menu">
       <a href="#">Login</a> | <a href="./sobre.html">Sobre</a> | <a href="./contato.html">Contato</a>
@@ -23,6 +25,7 @@
   </header>
 
   <main>
+
     <!-- Área principal da página contendo o formulário de contato-->
     <section>
       <h2>Contato - Fale conosco!</h2>
@@ -35,6 +38,7 @@
       <form>
         <fieldset>
           <legend><h3>Dados de contato</h3></legend>
+          <!-- Pares de label e input separados por section's -->
           <section class="input-group">
             <label for="name">Nome completo:</label> <br>
             <input type="text" name="name" id="name" required>
@@ -94,9 +98,10 @@
           <legend><h3>Solicitação</h3></legend>
           <label for="subjects">Assuntos:</label>
           <select name="subjects" id="subjects">
-            <!-- A propriedade value está vazia intencionalmente para não haver valor;
-                propriedade disabled para desabilitar o campo; e a propriedade selected
-                para ser a primeira selecionada e ajudar no entendimento da escolha.
+            <!-- 
+                - Propriedade value está vazia intencionalmente para não haver valor;
+                - Propriedade disabled para desabilitar o campo; 
+                - Propriedade selected para ser a primeira selecionada e ajudar no entendimento da escolha.
             -->
             <option value="" disabled selected>Selecione</option>
             <option value="budget">Orçamento</option>
@@ -108,7 +113,8 @@
           </select>
           <br>
           <br>
-          <textarea name="message" id="" cols="30" rows="5" required placeholder="Escreva sua mensagem"></textarea>
+          <!-- Propriedades cols e rows para dimensionamento inicial do textarea-->
+          <textarea name="message" id="message" cols="30" rows="5" required placeholder="Escreva sua mensagem"></textarea>
         </fieldset>
         <br>
         <button type="reset">Reset</button>
