@@ -6,120 +6,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Plataforma para criação de processos seletivos">
   <meta name="keywords" content="Plataforma, processo seletivo, exercícios de código, desenvolvedores">
-  <link rel="stylesheet" href="./src/styles/pages/index.css">
+  <!-- Fontes gratuitas do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="./src/styles/reset.css"> -->
   <link rel="stylesheet" href="./src/styles/global.css">
-  <link rel="stylesheet" type="text/css" href="./src/styles/reset.css">
-  <title>Technology Selection</title>
+  <link rel="stylesheet" href="./src/styles/index.css">
+  <title>Technology Test</title>
 </head>
 
 <body>
-  <!--Estrutura das páginas: Header / Main / Footer -->
-  <header>
+  <div class="container">
+    <header>
+      <a id="logo" href="./index.html"><img src="./assets/logo.svg" alt="Tech Test logo"></a>
+      <!--Menu de navegação no desktop-->
+      <nav>
+        <a href="./src/pages/about/about.html" id="menu-about">Quem Somos?</a>
+        <a href="#plans" id="menu-plans">Planos</a>
+        <a href="./src/pages/contact/contact.html" id="menu-contact">Contato</a>
+      </nav>
+      <nav>
+        <a href="#"><span>Criar Conta</span><img src="./assets/create-account-white.svg" alt=""></a>
+        <a href="#"><span>Entrar</span><img src="./assets/login-white.svg" alt=""></a>
+      </nav>
+      <a href="#" id="menu"><img src="./assets/menu.svg" alt="Botão do menu"></a>
+    </header>
 
-    <!-- Link como botão para página principal, uso da tag span para ficar ao lado -->
+    <main>
+      <!--Conteúdo principal-->
+      <section id="content">
+        <div class="content-desktop">
+            <div class="content-text-left">
+              <h1>Encontrando os melhores profissionais no mundo da tecnologia</h1>
 
-    <a href="#">
-      <div class="logo title">
-        <img width="100px" src="./src/assets/logo.png" alt="logo Learning Forever">
-        <span><b>Technology Selection</b></span>
-      </div>
-    </a>
-    
-    <!-- Barra de navegação -->
+              <p class="description">
+                Seja bem vindo à plataforma onde você pode criar testes técnicos, escolher os melhores desenvolvedores e praticar com exercícios reais do mercado de trabalho. Dê uma olhada em nossos <a href="#plans">planos.</a>
+              </p>
 
-    <nav class="menu">
-      <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="./src/pages/about.html">Sobre</a></li>
-        <li><a href="./src/pages/contact.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+              <div class="button-container-content">
+                <a href="#"><span>Entrar</span><img src="./assets/login-white.svg" alt=""></a>
+                <a href="#"><span>Criar Conta</span><img src="./assets/create-account-white.svg" alt=""></a>
+              </div>
+            </div>
+          <!-- Video demo para publicidade -->
+          <div class="video-container">
+            <video autoplay loop>
+              <source src="./assets/apresentation.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <section id="sponsors">
+          <h2>Patrocinadores</h2> 
+          <!-- Futuramente fazer carrossel de imagens-->
+          <div>
+            <img src="./assets/soulcode-logo.jpeg" alt="Logo da SoulCode">
+            <img src="./assets/tnt-energy-drink-logo.svg" alt="Logo da TNT">
+          </div>
+        </section>
+      </section>
 
-  <!-- Área principal da página contendo o objetivo da plataforma -->
-  
-  <main>
-    <section id="intro">
-      <h1>Technology Selection - Encontrando os melhores profissionais</h1>
+      <!--Seção sobre somente para versão mobile-->
+      <section id="about">
+        <h2>Quem somos?</h2>
+        <p>
+          Somos uma startup brasileira que busca realizar conexões entre desenvolvedores e 
+          empresas por realizar processos seletivos e oportunidades de prática para entrevistas. 
+          Inspirados pela plataforma HackerRank, resolvemos criar uma solução para o público
+          brasileiro que possa unir a prática do código com o mercado de trabalho por oferecer 
+          serviços de criação de processos seletivos abertos ou privados. 
+        </p>
+      </section>
+      
+      <section id="plans">
+        <h2>Planos</h2>
+        <div>
+          <!--Article por conter um conteúdo com o mesmo objetivo-->
+          <article>
+            <h3 class="plan-name">Basic</h3>
+            <ul>
+              <li>Acesso liberado para criação de testes.</li>
+              <li>Criação de 5 testes técnicos por período.</li>
+            </ul>
+            <p class="price">250/mês</p>
+          </article>
 
-      <!--Seção da tag <pre> não é cabível a indentação em detrimento a formatação da página-->
+          <article>
+            <h3 class="plan-name">Standard</h3>
+            <ul>
+              <li>Acesso liberado para edição de material.</li>
+              <li>Criação de 10 testes técnicos por período.</li>
+              <li>Criação de 10 dinâmicas por período.</li>
+            </ul>
+            <p class="price">500/mês</p>
+          </article>
 
-      <p>Seja bem vindo à plataforma onde você pode criar processos seletivos, dinâmicas, entrevistas, 
-      testes técnicos e muito mais para seu empregador. Além disso, não se esquecemos de você desenvolvedor,
-      disponibilizaremos para <strong>todos gratuitamente</strong> testes reais e práticos exigidos por empresas a cada mês, 
-      para que possa praticar e conquistar a tão sonhada vaga nesse mercado tão desejado e próspero. 
-      <strong>Não vai perder essa oportunidade única, vai?</strong> Então se <a href="#login">cadastre gratuitamente</a> em nossa plataforma
-      e receba um aviso quando sair um novo teste. 
-      </p>
-      <!-- Imagens com endereços online -->
-      <img
-        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-        alt="Imagem de uma pessoa trabalhando no computador">
-      <img
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-        alt="Imagem de código">
-      <img
-        src="https://images.unsplash.com/photo-1603575448360-153f093fd0b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-        alt="Imagem de um programador">
+          <article>
+            <h3 class="plan-name">Premium</h3>
+            <ul>
+              <li>Acesso liberado para edição de material.
+              </li>
+              <li>Criação ilimitada de testes técnicos por período.
+              </li>
+              <li>Criação ilimitada de dinâmicas por período.
+              </li>
+              <li>Integração com o google meet para dinâmicas em vídeo.
+              </li>
+            </ul>
+            <p class="price">750/mês</p>
+          </article>
+        </div>
+      </section>
+      <!-- Contato simples na pagina principal só na versão desktop -->
+      <section id="contact">
+        <h2>Contato - Fale Conosco!</h2>
+        <form>
+          <div class="input-group">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="input-group">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+          </div>
+          <div class="input-group">
+            <label for="message">Mensagem:</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Escreva uma solicitação, dúvida, sugestão ou reclamação."></textarea>
+          </div>
+          <button type="submit" id="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
 
-      <p>Sua melhor e preferida <strong>plataforma educacional e empregatícia</strong> para encontrar os
-        <u>candidatos</u> certos, <a href="#plans"><mark>confira nossos planos.</mark></a> ou faça um <a href="./src/pages/contact.html"><mark>orçamento</mark></a></p>
-    </section>
+    <footer>
+      <!-- Adicionar seção no footer <section id="social-media"></section>
+      <section id="menu-botton"></section> -->
 
-    <!-- Seção dedicada para conter a tabela de planos oferecidos -->
-
-    <section id="plans">
-      <h2>Planos para Empresas</h2>
-      <table border="2">
-        <thead>
-          <tr>
-            <th>Planos</th>
-            <th>Descrição</th>
-            <th>Preços</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Basic</td>
-            <td>
-              <ul>
-                <li>Acesso liberado para edição de material.</li>
-                <li>Criação de 5 testes técnicos por período.</li>
-              </ul>
-            </td>
-            <td>250/mês</td>
-          </tr>
-          <tr>
-            <td>Standard</td>
-            <td>
-              <ul>
-                <li>Acesso liberado para edição de material.</li>
-                <li>Criação de 10 testes técnicos por período.</li>
-                <li>Criação de 10 dinâmicas por período.</li>
-              </ul>
-            </td>
-            <td>500/mês</td>
-          </tr>
-          <tr>
-            <td>Premium</td>
-            <td>
-              <ul>
-                <li>Acesso liberado para edição de material.</li>
-                <li>Criação ilimitada de testes técnicos por período.</li>
-                <li>Criação ilimitada de dinâmicas por período.</li>
-                <li>Integração com o google meet para dinâmicas em vídeo.</li>
-              </ul>
-            </td>
-            <td>750/mês</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
-
-  <footer>
-    <small><b>&copy; Copyright 2021,</b> Technology Selection</small>
-  </footer>
+      <section id="policy-terms">
+        <p>
+          &copy; 2021. Technology Test LTDA. Todos os direitos reservados.
+        </p>
+        <div class="button-container-terms">
+          <a href="#">Termos & Condições</a>
+          <a href="#">Política de Privacidade</a>
+        </div>
+      </section>
+      
+    </footer>
+  </div>
 </body>
 
 </html>
