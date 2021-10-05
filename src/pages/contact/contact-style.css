@@ -1,0 +1,285 @@
+body {
+  background-color: #fefcfb;
+}
+
+.container {
+  padding: 16px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fefcfb;
+}
+
+header #logo img{
+  width: 10rem;
+  height: auto;
+}
+
+header nav {
+  display: none;
+}
+
+header #menu img {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-top: 0.30rem;
+}
+
+main {
+  /*antes do position fixed: margin-top: 3rem; */
+  margin-top: 4.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+main section.text-content h2{
+  padding-bottom: 1rem;
+}
+
+main section.text-content p {
+  padding-bottom: 1rem;
+
+  text-align: justify;
+}
+
+main section.form-content h3 {
+  padding: 8px 0;
+  
+  text-align: center;
+}
+
+main section.form-content .input-group {
+  padding: 8px;
+}
+
+main section.form-content .input-group input {
+  margin-top: 4px;
+  padding: 8px 0;
+
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+main section.form-content select {
+  margin-top: 4px;
+  padding: 8px 0;
+
+  border-radius: 12px;
+}
+
+main section.form-content .subject select {
+  margin-top: 4px;
+  padding: 8px 0;
+
+  border-radius: 12px;
+}
+
+main section.form-content textarea {
+  padding: 8px;
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+main section.form-content .button-container {
+  width: 80vw;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+main section.form-content .button-container button {
+  margin-top: 24px;
+  padding: 12px 0;
+
+  border-radius: 10px;
+}
+
+main section.form-content .button-container button:nth-child(2) {
+  color: #fefcfb;
+  background-color: #034078;
+}
+
+footer section#policy-terms {
+  margin: 16px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+
+footer section#policy-terms p {
+  margin-bottom: 8px;
+}
+
+footer section#policy-terms div.button-container-terms {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section#policy-terms div.button-container-terms a {
+  text-decoration: none;
+}
+
+/*Versão Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px ) {
+  .container {
+    padding: 48px;
+  }
+
+  header {
+    padding: 32px;
+  }
+
+  footer section#policy-terms div.button-container-terms {
+    padding: 0 80px;
+
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*Versão Desktop*/
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+  header a#menu, a#menu img {
+    display: none;
+  }
+  header {
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+    padding: 1.5rem 10%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    background-color: #fefcfb;
+  }
+  
+  header #logo img{
+    width: 10rem;
+    height: auto;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  header nav a {
+    width: 9.5rem;
+    height: auto;
+
+    margin: 0;
+    
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #0A1128;
+    text-decoration: none;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  header nav:nth-child(3) a {
+    width: 150px;
+    padding: 10px 10px;
+
+    font-size: 16px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav:nth-child(3) a:nth-child(1) {
+    background-color: #fefcfb;
+    color: #034078; 
+    border: 2px solid #034078;
+
+    transition: background-color 1s;
+  }
+
+  header nav:nth-child(3) a:nth-child(1):hover {
+    background-color: #034078aa;
+    color: #fefcfb; 
+    border: 2px solid #034078aa;
+  }
+
+  header nav:nth-child(3) a:nth-child(2) {
+    margin-left: 1rem;
+    
+    background-color: #034078;
+    color: #fefcfb;
+    /*Para compensar o tamanho do botão irmão*/
+    border: 2px solid #034078;
+
+    transition: background-color 1s;
+  }
+
+  header nav:nth-child(3) a:nth-child(2):hover {
+    background-color: #faf8f7;
+    color: #034078;
+    /*Para compensar o tamanho do botão irmão*/
+    border: 2px solid #034078;
+  }
+
+  main {
+    margin-top: 10rem;
+  }
+
+  main .form-content form {
+    width: 40vw;
+
+    margin: 0 auto;
+  }
+
+  main section.form-content .button-container {
+    width: 50%;
+  }
+
+  footer {
+    margin: 48px 0 8px;
+  }
+
+  footer section#policy-terms {
+    margin: auto;
+    width: 50%;
+  }
+
+  footer section#policy-terms div.button-container-terms {
+    justify-content: space-around;
+  }
+}

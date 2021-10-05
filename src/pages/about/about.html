@@ -9,12 +9,62 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" type="text/css" href="./src/styles/reset.css"> -->
-  <link rel="stylesheet" href="./src/styles/global.css">
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="./about-style.css">
   <title>Technology Test</title>
 </head>
 
 <body>
-  
+  <div class="container">
+    <header>
+      <a id="logo" href="../../../index.html"><img src="../../../assets/logo.svg" alt="Tech Test logo"></a>
+      <!--Menu de navegação no desktop-->
+      <nav>
+        <a href="#logo" id="menu-about">Quem Somos?</a>
+        <a href="../../../index.html#plans" id="menu-plans">Planos</a>
+        <a href="../contact/contact.html" id="menu-contact">Contato</a>
+      </nav>
+      <nav>
+        <a href="#"><span>Criar Conta</span><img src="../../../assets/create-account-white.svg" alt=""></a>
+        <a href="#"><span>Entrar</span><img src="../../../assets/login-white.svg" alt=""></a>
+      </nav>
+      <a href="#" id="menu"><img src="../../../assets/menu.svg" alt="Botão do menu"></a>
+    </header>
+
+    <main>
+      <section class="content">
+        <h2>Quem somos?</h2>
+        <p>
+          Somos uma startup brasileira que buscar realizar conexões entre desenvolvedores e
+          empresas por realizar processos seletivos e oportunidades de prática para entrevistas.
+          Inspirados pela plataforma HackerRank, resolvemos criar uma solução para o público
+          brasileiro que possa unir a prática do código com o mercado de trabalho por oferecer
+          serviços de criação de processos seletivos abertos ou privados.
+        </p>
+        <p>Veja o vídeo abaixo para realizar um tour pela plataforma:</p>
+      </section>
+      <section class="video">
+        <iframe
+                src="https://www.youtube.com/embed/0UqtoGENX8M" 
+                title="YouTube video player" frameborder="2" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+      </section>
+    </main>
+
+    <footer>
+      <section id="policy-terms">
+        <p>
+          &copy; 2021. Technology Test LTDA. Todos os direitos reservados.
+        </p>
+        <div class="button-container-terms">
+          <a href="#">Termos & Condições</a>
+          <a href="#">Política de Privacidade</a>
+        </div>
+      </section>
+    </footer>
+  </div>
 </body>
 
 </html>
