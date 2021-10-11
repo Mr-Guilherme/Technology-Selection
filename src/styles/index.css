@@ -568,12 +568,14 @@ footer section#policy-terms div.button-container-terms a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 48px;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   section#plans div article {
     width: 100%;
     padding: 24px 8px;
+
+    justify-content: space-between;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: -4px 4px 8px 2px #034078;
   }
