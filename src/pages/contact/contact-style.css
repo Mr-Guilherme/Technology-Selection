@@ -53,7 +53,7 @@ main section.text-content p {
 }
 
 main section.form-content h3 {
-  padding: 8px 0;
+  padding: 8px 0 0;
   
   text-align: center;
 }
@@ -62,33 +62,40 @@ main section.form-content .input-group {
   padding: 8px;
 }
 
+main section.form-content .input-group label {
+  font-weight: 500;
+}
+
 main section.form-content .input-group input {
   margin-top: 4px;
-  padding: 8px 0;
+  padding: 8px 4px;
 
   width: 100%;
 
-  border-radius: 12px;
+  border: 1.5px solid #034078;
+  border-radius: 8px;
 }
 
 main section.form-content select {
   margin-top: 4px;
   padding: 8px 0;
 
-  border-radius: 12px;
+  border-color: #034078;
+  border-radius: 8px;
 }
 
 main section.form-content .subject select {
   margin-top: 4px;
   padding: 8px 0;
 
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 main section.form-content textarea {
   padding: 8px;
   width: 100%;
 
+  border-color: #034078;
   border-radius: 10px;
 }
 
@@ -167,14 +174,10 @@ footer section#policy-terms div.button-container-terms a {
   header a#menu, a#menu img {
     display: none;
   }
+
   header {
     width: 100%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  
+    
     padding: 1.5rem 10%;
   
     display: flex;
@@ -184,11 +187,6 @@ footer section#policy-terms div.button-container-terms a {
     background-color: #fefcfb;
   }
   
-  header #logo img{
-    width: 10rem;
-    height: auto;
-  }
-
   header nav {
     display: flex;
     justify-content: space-around;
@@ -196,12 +194,15 @@ footer section#policy-terms div.button-container-terms a {
     text-decoration: none;
   }
 
+  header nav:nth-child(2) {
+    padding: 0 12px;
+  }
+
   header nav a {
-    width: 9.5rem;
+    width: auto;
     height: auto;
 
-    margin: 0;
-    
+    margin: 0 12px;
 
     font-weight: 700;
     font-size: 20px;
@@ -261,7 +262,7 @@ footer section#policy-terms div.button-container-terms a {
   }
 
   main .form-content form {
-    width: 40vw;
+    width: 45vw;
 
     margin: 0 auto;
   }
