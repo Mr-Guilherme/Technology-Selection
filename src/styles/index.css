@@ -243,27 +243,27 @@ section#contact h2 {
   font-size: 30px;
 }
 
-section#contact div.input-group {
+section#contact form div.input-group {
   padding-bottom: 0.75rem;
 
   display: flex;
   flex-direction: column;
 }
 
-section#contact div.input-group label {
+section#contact form div.input-group label {
   margin-bottom: 0.25rem;
 
   font-size: 18px;
 }
 
-section#contact div.input-group input, textarea {
+section#contact form div.input-group input, textarea {
   padding: 12px;
 
-  border: 2px solid #0A1128;
-  border-radius: 12px;
+  border: 1.5px solid #034078;
+  border-radius: 8px;
 }
 
-section#contact div.input-group:nth-child(3) {
+section#contact form div.input-group:nth-child(3) {
   margin-top: 1.5rem;
 }
 
