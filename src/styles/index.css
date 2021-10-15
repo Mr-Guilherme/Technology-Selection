@@ -120,6 +120,7 @@ div.video-container {
 div.video-container video {
   width: 90vw;
   border: 2px solid #0A1128;
+  border-radius: 16px;
 }
 
 section#sponsors {
@@ -530,7 +531,6 @@ footer section#policy-terms div.button-container-terms a {
   div.video-container video {
     width: 32vw;
     border: 2px solid #0A1128;
-    border-radius: 16px;
   }
 
   section#sponsors {
